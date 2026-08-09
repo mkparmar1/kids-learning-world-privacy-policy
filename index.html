@@ -1,208 +1,995 @@
-# Privacy Policy — Kids Learning World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Privacy Policy for Kids Learning World - a fun and interactive educational game for children and families."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Privacy Policy | Kids Learning World</title>
+
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --primary-dark: #5142c7;
+            --secondary: #00b894;
+            --accent: #fdcb6e;
+            --text: #263238;
+            --muted: #667085;
+            --background: #f6f8fc;
+            --card: #ffffff;
+            --border: #e7eaf0;
+            --danger: #e17055;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Header */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6c5ce7 0%,
+                    #7c6cf0 45%,
+                    #00b894 100%
+                );
+
+            color: white;
+            padding: 70px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.10);
+        }
+
+        .hero::before {
+            width: 280px;
+            height: 280px;
+            top: -120px;
+            left: -80px;
+        }
+
+        .hero::after {
+            width: 350px;
+            height: 350px;
+            right: -120px;
+            bottom: -180px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 46px;
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: clamp(32px, 6vw, 52px);
+            line-height: 1.15;
+            font-weight: 800;
+        }
+
+        .hero p {
+            margin: 10px 0;
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        .updated {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            border-radius: 30px;
+            background: rgba(255,255,255,0.15);
+            font-size: 14px;
+        }
+
+        /* Main */
+
+        .container {
+            width: min(100% - 32px, 980px);
+            margin: -35px auto 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .content {
+            background: var(--card);
+            border-radius: 24px;
+            box-shadow:
+                0 15px 45px rgba(31, 41, 55, 0.08);
+            padding: clamp(24px, 5vw, 55px);
+        }
+
+        /* Introduction */
+
+        .intro {
+            padding: 22px;
+            background: #f2f0ff;
+            border-left: 5px solid var(--primary);
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+
+        .intro strong {
+            color: var(--primary-dark);
+        }
+
+        /* Sections */
+
+        section {
+            margin-bottom: 42px;
+            scroll-margin-top: 25px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 25px;
+            margin: 0 0 15px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            font-size: 19px;
+            margin: 22px 0 10px;
+            color: #374151;
+        }
+
+        p {
+            margin: 0 0 15px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin: 12px 0 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Highlight cards */
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+        }
+
+        .highlight {
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: #fff;
+        }
+
+        .highlight-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .highlight strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .highlight span {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* Notice */
+
+        .notice {
+            background: #fff8e7;
+            border: 1px solid #ffe4a3;
+            border-left: 5px solid var(--accent);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .notice strong {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        /* Contact */
+
+        .contact-card {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f2f0ff,
+                    #eefbf7
+                );
+
+            border-radius: 18px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-label {
+            font-weight: 700;
+            min-width: 70px;
+        }
+
+        .contact-row a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-row a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 35px 20px 50px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: var(--text);
+        }
+
+        /* Back to top */
+
+        .top-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 50px 18px 65px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .container {
+                width: min(100% - 20px, 980px);
+                margin-top: -25px;
+            }
+
+            .content {
+                border-radius: 18px;
+                padding: 22px 18px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .intro {
+                padding: 18px;
+            }
+
+            section {
+                margin-bottom: 35px;
+            }
+        }
+    </style>
+</head>
 
-**Last Updated: August 9, 2026**
+<body id="top">
 
-**App Name:** Kids Learning World
-**Developer:** Kids Learning World
-**Email:** [mkparmar.131@gmail.com](mailto:mkparmar.131@gmail.com)
-**Phone:** +91 99252 43238
+<header class="hero">
 
-## 1. Introduction
+    <div class="hero-content">
 
-Welcome to **Kids Learning World** ("we", "our", or "the App").
+        <div class="app-icon">
+            🎓
+        </div>
 
-Kids Learning World is an educational game designed for children and families. The App provides interactive learning activities, games, puzzles, stories, music, animations, and educational content.
+        <h1>Kids Learning World</h1>
 
-We respect the privacy of children and families. This Privacy Policy explains how information is handled when you use Kids Learning World.
+        <p>
+            Privacy Policy
+        </p>
 
-Our goal is to provide a safe and enjoyable learning experience while collecting as little personal information as possible.
+        <div class="updated">
+            Last Updated: August 9, 2026
+        </div>
 
-## 2. Children's Privacy
+    </div>
 
-Kids Learning World is designed for children and families.
+</header>
 
-We do not intentionally collect personal information from children through the App.
+<main class="container">
 
-Children can use the core learning features without creating an account or providing personal information such as an email address, phone number, home address, or precise location.
+    <article class="content">
 
-We encourage parents and guardians to supervise their children's use of the App.
+        <div class="intro">
 
-## 3. Information We Collect
+            <strong>Your privacy matters.</strong>
 
-### Personal Information
+            Kids Learning World is designed to provide children
+            and families with a safe, fun, and educational experience
+            while minimizing the amount of personal information collected.
 
-Kids Learning World does not intentionally collect personal information such as:
+        </div>
 
-* Full name
-* Email address
-* Phone number
-* Home address
-* Precise location
-* Photographs
-* Videos
-* Contacts
-* Passwords
-* Financial information
 
-### Learning Progress
+        <!-- 1 -->
 
-The App may store learning and gameplay information locally on the device, including:
+        <section id="introduction">
 
-* Completed lessons
-* Stars
-* Coins
-* XP
-* Achievements
-* Stickers
-* Learning progress
-* Daily streaks
-* Game settings
-* Audio preferences
-* Accessibility preferences
+            <h2>1. Introduction</h2>
 
-This information is used to provide the App's learning and gameplay functionality.
+            <p>
+                Welcome to <strong>Kids Learning World</strong>
+                ("we", "our", or "the App").
+            </p>
 
-## 4. Local Storage
+            <p>
+                Kids Learning World is an educational game designed
+                for children and families. The App provides interactive
+                learning activities, games, puzzles, stories, music,
+                animations, and educational content.
+            </p>
 
-Kids Learning World may store learning progress and preferences locally on the user's device.
+            <p>
+                This Privacy Policy explains how information is handled
+                when you use Kids Learning World.
+            </p>
 
-This may include:
+        </section>
 
-* Game progress
-* Achievement progress
-* Rewards
-* Settings
-* Child profile information entered by a parent
-* Accessibility preferences
-* Audio preferences
 
-This locally stored information is not intentionally transmitted to us.
+        <!-- Privacy highlights -->
 
-If future versions introduce online accounts, cloud synchronization, or online backup, this Privacy Policy will be updated to explain those changes.
+        <div class="highlight-grid">
 
-## 5. Parent-Provided Information
+            <div class="highlight">
 
-The App may allow a parent or guardian to create a child profile.
+                <div class="highlight-icon">🛡️</div>
 
-A parent may choose to provide information such as:
+                <strong>Child-Friendly</strong>
 
-* First name or nickname
-* Age group
-* Avatar
-* Learning preferences
+                <span>
+                    Designed with children's privacy in mind.
+                </span>
 
-Parents should avoid entering unnecessary personal information. We recommend using a nickname instead of a child's full legal name.
+            </div>
 
-## 6. Microphone and Camera
 
-The core version of Kids Learning World does not require access to:
+            <div class="highlight">
 
-* Camera
-* Microphone
-* Contacts
-* Precise location
+                <div class="highlight-icon">📱</div>
 
-If future versions introduce voice recording, camera features, or similar functionality, our privacy practices will be updated accordingly.
+                <strong>Local Progress</strong>
 
-## 7. Advertising
+                <span>
+                    Learning progress may be stored locally on the device.
+                </span>
 
-Kids Learning World does not currently display personalized advertising to children.
+            </div>
 
-If advertising is introduced in a future version, advertising services will be reviewed for compliance with applicable children's privacy requirements and Google Play Families policies.
 
-This Privacy Policy and our Google Play Data Safety information will be updated before introducing any new advertising practices.
+            <div class="highlight">
 
-## 8. Third-Party Services
+                <div class="highlight-icon">🚫</div>
 
-The current core learning experience is designed to minimize the use of third-party services that collect personal information.
+                <strong>No Personal Information</strong>
 
-If third-party services or SDKs are introduced, we will review their data practices and update this Privacy Policy when required.
+                <span>
+                    The core experience does not require personal information.
+                </span>
 
-## 9. Analytics
+            </div>
 
-The current privacy-first version of Kids Learning World does not intentionally collect personal information from children for analytics purposes.
+        </div>
 
-If analytics services are introduced in a future version, they will be implemented with children's privacy and applicable laws in mind.
 
-## 10. Notifications
+        <!-- 2 -->
 
-If notifications are enabled, they may be used for purposes such as:
+        <section id="children">
 
-* Learning reminders
-* Daily challenges
-* Streak reminders
-* Parent reminders
+            <h2>2. Children's Privacy</h2>
 
-Notification preferences can be managed through the App and/or the device settings, where supported.
+            <p>
+                Kids Learning World is designed for children and families.
+            </p>
 
-## 11. Data Security
+            <p>
+                We do not intentionally collect personal information
+                from children through the App.
+            </p>
 
-We take reasonable measures to protect information handled by the App.
+            <p>
+                Children can use the core learning features without
+                creating an account or providing personal information
+                such as an email address, phone number, home address,
+                or precise location.
+            </p>
 
-Because learning progress may be stored locally on the device, users should also protect their Android device using appropriate device security measures.
+            <p>
+                We encourage parents and guardians to supervise
+                children's use of the App.
+            </p>
 
-No electronic storage or transmission method can be guaranteed to be completely secure.
+        </section>
 
-## 12. Data Retention and Deletion
 
-Learning progress stored locally can generally be removed by:
+        <!-- 3 -->
 
-* Using available reset or delete options within the App
-* Clearing the App's storage/data through Android settings
-* Uninstalling the App
+        <section id="information">
 
-If personal information is collected through an online service in a future version, appropriate data retention and deletion procedures will be described in an updated Privacy Policy.
+            <h2>3. Information We Collect</h2>
 
-## 13. Parents' Rights
+            <h3>Personal Information</h3>
 
-Parents and legal guardians may contact us with questions or requests regarding children's privacy and information practices.
+            <p>
+                Kids Learning World does not intentionally collect
+                personal information such as:
+            </p>
 
-Parents may contact us to ask:
+            <ul>
+                <li>Full name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Home address</li>
+                <li>Precise location</li>
+                <li>Photographs</li>
+                <li>Videos</li>
+                <li>Contacts</li>
+                <li>Passwords</li>
+                <li>Financial information</li>
+            </ul>
 
-* What information the App collects
-* How information is used
-* Whether information is shared
-* How information can be deleted
-* How to prevent future collection or use
+            <h3>Learning Progress</h3>
 
-We will handle privacy requests in accordance with applicable laws and regulations.
+            <p>
+                The App may store learning and gameplay information
+                locally on the device, including:
+            </p>
 
-## 14. International Privacy
+            <ul>
+                <li>Completed lessons</li>
+                <li>Stars</li>
+                <li>Coins</li>
+                <li>XP</li>
+                <li>Achievements</li>
+                <li>Stickers</li>
+                <li>Learning progress</li>
+                <li>Daily streaks</li>
+                <li>Game settings</li>
+                <li>Audio preferences</li>
+                <li>Accessibility preferences</li>
+            </ul>
 
-Kids Learning World may be available to users in different countries.
+            <p>
+                This information is used to provide the App's
+                learning and gameplay functionality.
+            </p>
 
-We aim to comply with applicable privacy and children's data protection requirements, including applicable requirements relating to children's privacy and data protection laws.
+        </section>
 
-The exact rights available to users may depend on their location and applicable law.
 
-## 15. Changes to This Privacy Policy
+        <!-- 4 -->
 
-We may update this Privacy Policy when:
+        <section id="storage">
 
-* New features are introduced
-* Our data practices change
-* Legal requirements change
-* Third-party services are added
-* App functionality changes
+            <h2>4. Local Storage</h2>
 
-When changes are made, we will update the **Last Updated** date at the top of this Privacy Policy.
+            <p>
+                Kids Learning World may store learning progress
+                and preferences locally on the user's device.
+            </p>
 
-## 16. Contact Us
+            <p>This may include:</p>
 
-If you have questions, concerns, or requests regarding this Privacy Policy or children's privacy, please contact us:
+            <ul>
+                <li>Game progress</li>
+                <li>Achievement progress</li>
+                <li>Rewards</li>
+                <li>Settings</li>
+                <li>Child profile information entered by a parent</li>
+                <li>Accessibility preferences</li>
+                <li>Audio preferences</li>
+            </ul>
 
-**Kids Learning World**
+            <p>
+                This locally stored information is not intentionally
+                transmitted to us.
+            </p>
 
-**Email:** [mkparmar.131@gmail.com](mailto:mkparmar.131@gmail.com)
+            <p>
+                If future versions introduce online accounts,
+                cloud synchronization, or online backup, this
+                Privacy Policy will be updated to explain those changes.
+            </p>
 
-**Phone:** +91 99252 43238
+        </section>
 
-We welcome questions and feedback from parents and guardians regarding the privacy and safety of children using Kids Learning World.
 
-## 17. Important Notice
+        <!-- 5 -->
 
-This Privacy Policy describes the current planned privacy practices of Kids Learning World.
+        <section id="parent">
 
-If the App uses any third-party SDKs, advertising networks, analytics services, cloud services, authentication, voice recording, camera functionality, crash reporting, or other services that collect or transmit information, this Privacy Policy must be updated to accurately describe those practices before release.
+            <h2>5. Parent-Provided Information</h2>
 
-**© 2026 Kids Learning World. All rights reserved.**
+            <p>
+                The App may allow a parent or guardian to create
+                a child profile.
+            </p>
+
+            <p>A parent may choose to provide information such as:</p>
+
+            <ul>
+                <li>First name or nickname</li>
+                <li>Age group</li>
+                <li>Avatar</li>
+                <li>Learning preferences</li>
+            </ul>
+
+            <p>
+                Parents should avoid entering unnecessary personal
+                information. We recommend using a nickname instead
+                of a child's full legal name.
+            </p>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section id="permissions">
+
+            <h2>6. Microphone and Camera</h2>
+
+            <p>
+                The core version of Kids Learning World does not
+                require access to:
+            </p>
+
+            <ul>
+                <li>Camera</li>
+                <li>Microphone</li>
+                <li>Contacts</li>
+                <li>Precise location</li>
+            </ul>
+
+            <p>
+                If future versions introduce voice recording,
+                camera features, or similar functionality,
+                our privacy practices will be updated accordingly.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section id="advertising">
+
+            <h2>7. Advertising</h2>
+
+            <p>
+                Kids Learning World does not currently display
+                personalized advertising to children.
+            </p>
+
+            <p>
+                If advertising is introduced in a future version,
+                advertising services will be reviewed for compliance
+                with applicable children's privacy requirements and
+                Google Play Families policies.
+            </p>
+
+            <div class="notice">
+
+                <strong>Important</strong>
+
+                This policy must be updated if advertising,
+                advertising SDKs, or other third-party services
+                are introduced into the App.
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section id="third-party">
+
+            <h2>8. Third-Party Services</h2>
+
+            <p>
+                The current core learning experience is designed
+                to minimize the use of third-party services that
+                collect personal information.
+            </p>
+
+            <p>
+                If third-party services or SDKs are introduced,
+                we will review their data practices and update
+                this Privacy Policy when required.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section id="analytics">
+
+            <h2>9. Analytics</h2>
+
+            <p>
+                The current privacy-first version of Kids Learning
+                World does not intentionally collect personal
+                information from children for analytics purposes.
+            </p>
+
+            <p>
+                If analytics services are introduced in a future
+                version, they will be implemented with children's
+                privacy and applicable laws in mind.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section id="notifications">
+
+            <h2>10. Notifications</h2>
+
+            <p>
+                If notifications are enabled, they may be used
+                for purposes such as:
+            </p>
+
+            <ul>
+                <li>Learning reminders</li>
+                <li>Daily challenges</li>
+                <li>Streak reminders</li>
+                <li>Parent reminders</li>
+            </ul>
+
+            <p>
+                Notification preferences can be managed through
+                the App and/or device settings, where supported.
+            </p>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section id="security">
+
+            <h2>11. Data Security</h2>
+
+            <p>
+                We take reasonable measures to protect information
+                handled by the App.
+            </p>
+
+            <p>
+                Because learning progress may be stored locally
+                on the device, users should also protect their
+                Android device using appropriate device security measures.
+            </p>
+
+            <p>
+                No electronic storage or transmission method can
+                be guaranteed to be completely secure.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section id="deletion">
+
+            <h2>12. Data Retention and Deletion</h2>
+
+            <p>
+                Learning progress stored locally can generally
+                be removed by:
+            </p>
+
+            <ul>
+                <li>Using available reset or delete options within the App</li>
+                <li>Clearing the App's storage/data through Android settings</li>
+                <li>Uninstalling the App</li>
+            </ul>
+
+            <p>
+                If personal information is collected through an
+                online service in a future version, appropriate
+                data retention and deletion procedures will be
+                described in an updated Privacy Policy.
+            </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section id="parents-rights">
+
+            <h2>13. Parents' Rights</h2>
+
+            <p>
+                Parents and legal guardians may contact us with
+                questions or requests regarding children's privacy
+                and information practices.
+            </p>
+
+            <p>Parents may contact us to ask:</p>
+
+            <ul>
+                <li>What information the App collects</li>
+                <li>How information is used</li>
+                <li>Whether information is shared</li>
+                <li>How information can be deleted</li>
+                <li>How to prevent future collection or use</li>
+            </ul>
+
+            <p>
+                We will handle privacy requests in accordance
+                with applicable laws and regulations.
+            </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section id="international">
+
+            <h2>14. International Privacy</h2>
+
+            <p>
+                Kids Learning World may be available to users
+                in different countries.
+            </p>
+
+            <p>
+                We aim to comply with applicable privacy and
+                children's data protection requirements, including
+                applicable requirements relating to children's
+                privacy and data protection laws.
+            </p>
+
+            <p>
+                The exact rights available to users may depend
+                on their location and applicable law.
+            </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section id="changes">
+
+            <h2>15. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy when:
+            </p>
+
+            <ul>
+                <li>New features are introduced</li>
+                <li>Our data practices change</li>
+                <li>Legal requirements change</li>
+                <li>Third-party services are added</li>
+                <li>App functionality changes</li>
+            </ul>
+
+            <p>
+                When changes are made, we will update the
+                <strong>Last Updated</strong> date at the top
+                of this Privacy Policy.
+            </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section id="contact">
+
+            <h2>16. Contact Us</h2>
+
+            <p>
+                If you have questions, concerns, or requests
+                regarding this Privacy Policy or children's
+                privacy, please contact us.
+            </p>
+
+            <div class="contact-card">
+
+                <div class="contact-row">
+
+                    <span class="contact-label">
+                        App:
+                    </span>
+
+                    <strong>
+                        Kids Learning World
+                    </strong>
+
+                </div>
+
+                <div class="contact-row">
+
+                    <span class="contact-label">
+                        Email:
+                    </span>
+
+                    <a href="mailto:mkparmar.131@gmail.com">
+                        mkparmar.131@gmail.com
+                    </a>
+
+                </div>
+
+                <div class="contact-row">
+
+                    <span class="contact-label">
+                        Phone:
+                    </span>
+
+                    <a href="tel:+919925243238">
+                        +91 99252 43238
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p style="margin-top: 18px;">
+                We welcome questions and feedback from parents
+                and guardians regarding the privacy and safety
+                of children using Kids Learning World.
+            </p>
+
+        </section>
+
+
+        <!-- 17 -->
+
+        <section id="notice">
+
+            <h2>17. Important Notice</h2>
+
+            <p>
+                This Privacy Policy describes the current planned
+                privacy practices of Kids Learning World.
+            </p>
+
+            <p>
+                If the App uses any third-party SDKs, advertising
+                networks, analytics services, cloud services,
+                authentication, voice recording, camera functionality,
+                crash reporting, or other services that collect or
+                transmit information, this Privacy Policy must be
+                updated to accurately describe those practices before
+                release.
+            </p>
+
+        </section>
+
+
+        <a href="#top" class="top-link">
+            ↑ Back to top
+        </a>
+
+    </article>
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>Kids Learning World</strong>
+    </p>
+
+    <p>
+        Fun Learning Every Day
+    </p>
+
+    <p>
+        © 2026 Kids Learning World. All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
